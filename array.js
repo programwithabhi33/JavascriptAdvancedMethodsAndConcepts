@@ -28,3 +28,24 @@ let newFruits2 = fruits.toSorted();
 console.log("newFruits2",newFruits2)
 
 /* You can apply the toSorted methos on the exisint array and it returns the new sorted array that contains those array elements that you have been applied the toSorted method on it and you can assign to any variable  */
+
+/* And there is toReversed method is there is exactly doing the same way how the toSorted method is doing the only difference is that the toSorted method is sorting the array in another hand the toReversed method is reversed the array  */
+
+let newFruits3 = fruits.toReversed();
+console.log("revered fruits array",newFruits3)
+
+/* the is also reverse method but it actually reversed the original array insted of create new reversed array using existing array  */
+
+// 3) splice method
+
+let flowers = ["rose","lotus","sunflower"]
+flowers.splice(0,1,"newRose")
+/* The splice method is splicing the array the first argument is what index of the array that you can start splicing in another words remove and the second argument is how many elements are you going to remove regarding to the starting element that you mentioned the first argument in the splice method and the third arguemnt is new element that you can add in that array. The splice method is splicing the original array if you want to create new array with that spliced you can use the toSpliced method it creates the new spliced array and the origianl array remain same */
+
+console.log(flowers)
+
+/* 
+But if you want create new array using splice method you can use the toSpliced method  */
+
+let newFlowers = flowers.toSpliced(0,2,"new Rose");
+console.log("newFlowers",newFlowers)
